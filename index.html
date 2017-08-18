@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src = "assets/script/todo.js"></script>
+  </head>
+  <body>
+    <div class = "container-fluid">
+      <div class = "row">
+        <div class = "col-lg-12">
+          <div class = "todo-list-header">
+            <h2 class = "title">Todo-List</h2>
+            <div class = "custom-container">
+              <input id = "newTodo" class  = "input-todo" type="text">
+              <button class = "btn-cutom" onclick="onAddTask()">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-lg-12">
+          <ul id = "my-list" class = "task-list">
+            <li class = "task">
+              <div class ="right-tick" onclick = 'onComplete(this)'>&#10003;</div>
+              lets add something in todo-list
+              <div class="close-custom" onclick = 'onDelete(this)'>&#10006;</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
